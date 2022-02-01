@@ -20,7 +20,6 @@ depositFunds(credit, date) {
     this.balance += credit
     const transaction = new Transaction (credit, 0, date, this.balance)
     this.transactionsArray.unshift(transaction)
-    console.log(this.transactionsArray)
 }
 
 withdrawFunds(debit, date) {
